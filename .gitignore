@@ -1,0 +1,22 @@
+# 配置文件含百度密钥，禁止提交
+config.conf
+hotkey.conf
+*.lnk
+# 编译产物（放 Release 附件，不提交仓库）
+translator.exe
+tfd-build-test.exe
+tfd-syntax-test.exe
+# C# 宿主构建产物
+csharp/TranslatorHost/bin/
+csharp/TranslatorHost/obj/
+src/csharp/**/bin/
+src/csharp/**/obj/
+scripts/bridge/
+# 调试日志
+tfd_debug.log
+# Node
+# webui/dist 有意入库：克隆后 dotnet build 即全功能可跑（绿色免安装定位）
+webui/node_modules/
+
+# 本地组包产物（package-release.ps1 输出；zip 只走 GitHub Release asset）
+release-pkg/
